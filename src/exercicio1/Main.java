@@ -32,10 +32,8 @@ public class Main {
 		List<Integer> lista = new ArrayList<Integer>();
 		
 		// Solicite ao usuário a entrada no último número da lista (stream) (n)
-		//System.out.print("Digite um número: ");
-		//n = Integer.parseInt(in.nextLine());
-		
-		numero = 10; // para teste
+		System.out.print("Digite um número: ");
+		numero = Integer.parseInt(in.nextLine());
 		
 		System.out.println( "Gere uma lista com números de 1 a n duplicados:" );
 		lista = Stream.iterate(1, n -> n <= numero , n -> n + 1)
